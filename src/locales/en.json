@@ -1,0 +1,101 @@
+{
+  "dashboard": {
+    "title": "Welcome to Dashboard",
+    "subtitle": "A clean and simple admin interface with Clerk authentication",
+    "authenticated": {
+      "title": "🔐 Authenticated",
+      "description": "You are successfully authenticated with Clerk",
+      "content": "This dashboard demonstrates a clean layout with Clerk authentication integration. You can access user management features through the sidebar navigation."
+    },
+    "modernUI": {
+      "title": "🎨 Modern UI",
+      "description": "Built with shadcn/ui and Tailwind CSS",
+      "content": "This interface uses modern design patterns with responsive layouts, dark/light mode support, and accessible components from shadcn/ui."
+    },
+    "performance": {
+      "title": "⚡ Performance",
+      "description": "Powered by Vite and React 19",
+      "content": "Fast development and build times with modern tooling. The application is optimized for performance and developer experience."
+    },
+    "readyToBuild": {
+      "title": "🛠️ Ready to Build",
+      "description": "Start building your application features",
+      "content": "The foundation is set up with routing, authentication, and a clean layout. You can now add your custom features and components."
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard"
+  },
+  "profile": {
+    "profileSettings": "Profile Settings",
+    "signOut": "Sign out",
+    "signOutConfirm": "Are you sure you want to sign out? You will need to sign in again to access your account.",
+    "profile": "Profile",
+    "sessions": "Sessions",
+    "security": "Security",
+    "personalInfo": "Personal Information",
+    "fullName": "Full Name",
+    "username": "Username",
+    "primaryEmail": "Primary Email",
+    "phoneNumber": "Phone Number",
+    "memberSince": "Member Since",
+    "activeSessions": "Active Sessions",
+    "activeSessionsDesc": "These are the devices and browsers where you're currently signed in",
+    "accountSecurity": "Account Security",
+    "accountStatus": "Account Status",
+    "verified": "Verified",
+    "unverified": "Unverified",
+    "twoFactor": "Two-Factor Authentication",
+    "backupCodes": "Backup Codes",
+    "externalAccounts": "External Accounts",
+    "current": "Current",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "generated": "Generated",
+    "notGenerated": "Not generated",
+    "connected": "Connected",
+    "noExternalAccounts": "No external accounts connected",
+    "notProvided": "Not provided",
+    "notSet": "Not set",
+    "locationUnavailable": "Location unavailable",
+    "lastActive": "Last active",
+    "manageProfile": "Manage your profile information and active sessions"
+  },
+  "auth": {
+    "secureAuth": "Secure authentication powered by Clerk for seamless user experience."
+  },
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "french": "Français",
+    "arabic": "العربية"
+  },
+  "theme": {
+    "themeSettings": "Theme Settings",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "systemMode": "System Mode",
+    "toggleTheme": "Toggle theme",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "themeDescription": "Adjust the appearance and layout to suit your preferences.",
+    "themeChoiceDescription": "Choose between system preference, light mode, or dark mode",
+    "sidebar": "Sidebar",
+    "layout": "Layout", 
+    "direction": "Direction",
+    "reset": "Reset",
+    "inset": "Inset",
+    "floating": "Floating",
+    "sidebarOption": "Sidebar",
+    "default": "Default",
+    "compact": "Compact", 
+    "fullLayout": "Full layout",
+    "leftToRight": "Left to Right",
+    "rightToLeft": "Right to Left",
+    "sidebarDescription": "Choose between inset, floating, or standard sidebar layout",
+    "layoutDescription": "Choose between default expanded, compact icon-only, or full layout mode",
+    "directionDescription": "Choose between left-to-right or right-to-left site direction"
+  }
+}

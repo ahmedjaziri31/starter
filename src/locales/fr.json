@@ -1,0 +1,101 @@
+{
+  "dashboard": {
+    "title": "Bienvenue sur le Tableau de Bord",
+    "subtitle": "Une interface d'administration propre et simple avec l'authentification Clerk",
+    "authenticated": {
+      "title": "🔐 Authentifié",
+      "description": "Vous êtes authentifié avec succès avec Clerk",
+      "content": "Ce tableau de bord démontre une mise en page propre avec l'intégration d'authentification Clerk. Vous pouvez accéder aux fonctionnalités de gestion des utilisateurs via la navigation de la barre latérale."
+    },
+    "modernUI": {
+      "title": "🎨 Interface Moderne",
+      "description": "Construit avec shadcn/ui et Tailwind CSS",
+      "content": "Cette interface utilise des modèles de conception modernes avec des mises en page réactives, la prise en charge du mode sombre/clair et des composants accessibles de shadcn/ui."
+    },
+    "performance": {
+      "title": "⚡ Performance",
+      "description": "Alimenté par Vite et React 19",
+      "content": "Temps de développement et de construction rapides avec des outils modernes. L'application est optimisée pour les performances et l'expérience développeur."
+    },
+    "readyToBuild": {
+      "title": "🛠️ Prêt à Construire",
+      "description": "Commencez à construire les fonctionnalités de votre application",
+      "content": "La fondation est configurée avec le routage, l'authentification et une mise en page propre. Vous pouvez maintenant ajouter vos fonctionnalités et composants personnalisés."
+    }
+  },
+  "navigation": {
+    "dashboard": "Tableau de Bord"
+  },
+  "profile": {
+    "profileSettings": "Paramètres du Profil",
+    "signOut": "Se déconnecter",
+    "signOutConfirm": "Êtes-vous sûr de vouloir vous déconnecter ? Vous devrez vous reconnecter pour accéder à votre compte.",
+    "profile": "Profil",
+    "sessions": "Sessions",
+    "security": "Sécurité",
+    "personalInfo": "Informations Personnelles",
+    "fullName": "Nom Complet",
+    "username": "Nom d'utilisateur",
+    "primaryEmail": "Email Principal",
+    "phoneNumber": "Numéro de Téléphone",
+    "memberSince": "Membre Depuis",
+    "activeSessions": "Sessions Actives",
+    "activeSessionsDesc": "Ces appareils et navigateurs où vous êtes actuellement connecté",
+    "accountSecurity": "Sécurité du Compte",
+    "accountStatus": "Statut du Compte",
+    "verified": "Vérifié",
+    "unverified": "Non vérifié",
+    "twoFactor": "Authentification à Deux Facteurs",
+    "backupCodes": "Codes de Sauvegarde",
+    "externalAccounts": "Comptes Externes",
+    "current": "Actuel",
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "generated": "Généré",
+    "notGenerated": "Non généré",
+    "connected": "Connecté",
+    "noExternalAccounts": "Aucun compte externe connecté",
+    "notProvided": "Non fourni",
+    "notSet": "Non défini",
+    "locationUnavailable": "Localisation indisponible",
+    "lastActive": "Dernière activité",
+    "manageProfile": "Gérez vos informations de profil et sessions actives"
+  },
+  "auth": {
+    "secureAuth": "Authentification sécurisée alimentée par Clerk pour une expérience utilisateur transparente."
+  },
+  "common": {
+    "language": "Langue",
+    "english": "English",
+    "french": "Français",
+    "arabic": "العربية"
+  },
+  "theme": {
+    "themeSettings": "Paramètres du Thème",
+    "lightMode": "Mode Clair",
+    "darkMode": "Mode Sombre",
+    "systemMode": "Mode Système",
+    "toggleTheme": "Changer de thème",
+    "theme": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "themeDescription": "Ajustez l'apparence et la mise en page selon vos préférences.",
+    "themeChoiceDescription": "Choisissez entre la préférence système, le mode clair ou le mode sombre",
+    "sidebar": "Barre latérale",
+    "layout": "Mise en page", 
+    "direction": "Direction",
+    "reset": "Réinitialiser",
+    "inset": "Incrusté",
+    "floating": "Flottant",
+    "sidebarOption": "Barre latérale",
+    "default": "Par défaut",
+    "compact": "Compact", 
+    "fullLayout": "Mise en page complète",
+    "leftToRight": "Gauche à droite",
+    "rightToLeft": "Droite à gauche",
+    "sidebarDescription": "Choisissez entre une mise en page incrustée, flottante ou standard de la barre latérale",
+    "layoutDescription": "Choisissez entre l'expansion par défaut, le mode compact en icônes uniquement ou le mode de mise en page complète",
+    "directionDescription": "Choisissez entre l'orientation gauche-à-droite ou droite-à-gauche du site"
+  }
+}
