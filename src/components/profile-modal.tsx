@@ -7,7 +7,6 @@ import {
   Smartphone, 
   Tablet, 
   Globe, 
-  MapPin, 
   Calendar,
   Shield,
   Mail,
@@ -180,20 +179,10 @@ export function ProfileModal({ open, onOpenChange }: ProfileModalProps) {
                     <div key={session.id} className="border rounded-lg p-4">
                       <div className="flex items-start justify-between">
                         <div className="flex items-center gap-3">
-                          {getDeviceIcon(session.latestActivity?.deviceType)}
+                          {getDeviceIcon('desktop')}
                           <div>
                             <div className="font-medium">
-                              {session.latestActivity?.browserName || 'Unknown Browser'} 
-                              {session.latestActivity?.browserVersion && 
-                                ` ${session.latestActivity.browserVersion.split('.')[0]}`
-                              }
-                            </div>
-                            <div className="text-sm text-muted-foreground flex items-center gap-1">
-                              <MapPin className="h-3 w-3" />
-                              {session.latestActivity?.city && session.latestActivity?.country
-                                ? `${session.latestActivity.city}, ${session.latestActivity.country}`
-                                : t('profile.locationUnavailable')
-                              }
+                              {t('profile.activeSession')}
                             </div>
                             <div className="text-xs text-muted-foreground">
                               {t('profile.lastActive')}: {format(new Date(session.lastActiveAt), 'MMM dd, yyyy HH:mm')}

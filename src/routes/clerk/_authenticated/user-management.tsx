@@ -14,20 +14,12 @@ import { Main } from '@/components/layout/main'
 import { LearnMore } from '@/components/learn-more'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
-import { UsersDialogs } from '@/features/users/components/users-dialogs'
-import { UsersPrimaryButtons } from '@/features/users/components/users-primary-buttons'
-import { UsersProvider } from '@/features/users/components/users-provider'
-import { UsersTable } from '@/features/users/components/users-table'
-import { users } from '@/features/users/data/users'
 
 export const Route = createFileRoute('/clerk/_authenticated/user-management')({
   component: UserManagement,
 })
 
 function UserManagement() {
-  const search = Route.useSearch()
-  const navigate = Route.useNavigate()
-
   const [opened, setOpened] = useState(true)
   const { isLoaded, isSignedIn } = useAuth()
 
@@ -46,55 +38,42 @@ function UserManagement() {
   return (
     <>
       <SignedIn>
-        <UsersProvider>
-          <Header fixed>
-            <Search />
-            <div className='ms-auto flex items-center space-x-4'>
-              <ThemeSwitch />
-              <UserButton />
-            </div>
-          </Header>
+        <Header fixed>
+          <Search />
+          <div className='ms-auto flex items-center space-x-4'>
+            <ThemeSwitch />
+            <UserButton />
+          </div>
+        </Header>
 
-          <Main>
-            <div className='mb-2 flex flex-wrap items-center justify-between space-y-2'>
-              <div>
-                <h2 className='text-2xl font-bold tracking-tight'>User List</h2>
-                <div className='flex gap-1'>
-                  <p className='text-muted-foreground'>
-                    Manage your users and their roles here.
+        <Main>
+          <div className='mb-2 flex flex-wrap items-center justify-between space-y-2'>
+            <div>
+              <h2 className='text-2xl font-bold tracking-tight'>User Management</h2>
+              <div className='flex gap-1'>
+                <p className='text-muted-foreground'>
+                  User management features coming soon.
+                </p>
+                <LearnMore
+                  open={opened}
+                  onOpenChange={setOpened}
+                  contentProps={{ side: 'right' }}
+                >
+                  <p className='mt-4'>
+                    You can sign out or manage/delete your account via the
+                    User Profile menu in the top-right corner of the page.
+                    <ExternalLink className='inline-block size-4' />
                   </p>
-                  <LearnMore
-                    open={opened}
-                    onOpenChange={setOpened}
-                    contentProps={{ side: 'right' }}
-                  >
-                    <p>
-                      This is the same as{' '}
-                      <Link
-                        to='/users'
-                        className='text-blue-500 underline decoration-dashed underline-offset-2'
-                      >
-                        '/users'
-                      </Link>
-                    </p>
-
-                    <p className='mt-4'>
-                      You can sign out or manage/delete your account via the
-                      User Profile menu in the top-right corner of the page.
-                      <ExternalLink className='inline-block size-4' />
-                    </p>
-                  </LearnMore>
-                </div>
+                </LearnMore>
               </div>
-              <UsersPrimaryButtons />
             </div>
-            <div className='-mx-4 flex-1 overflow-auto px-4 py-1 lg:flex-row lg:space-y-0 lg:space-x-12'>
-              <UsersTable data={users} navigate={navigate} search={search} />
-            </div>
-          </Main>
-
-          <UsersDialogs />
-        </UsersProvider>
+          </div>
+          <div className='mt-8 p-8 border rounded-lg bg-muted/50'>
+            <p className='text-center text-muted-foreground'>
+              User management table will be displayed here.
+            </p>
+          </div>
+        </Main>
       </SignedIn>
     </>
   )
@@ -134,16 +113,6 @@ function Unauthorized() {
           You must be authenticated via Clerk{' '}
           <sup>
             <LearnMore open={opened} onOpenChange={setOpened}>
-              <p>
-                This is the same as{' '}
-                <Link
-                  to='/users'
-                  className='text-blue-500 underline decoration-dashed underline-offset-2'
-                >
-                  '/users'
-                </Link>
-                .{' '}
-              </p>
               <p>You must first sign in using Clerk to access this route. </p>
 
               <p className='mt-4'>
