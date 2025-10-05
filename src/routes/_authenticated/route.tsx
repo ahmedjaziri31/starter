@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { SignedIn, SignedOut } from '@clerk/clerk-react'
 import { useEffect } from 'react'
 import { AuthenticatedLayout } from '@/components/layout/authenticated-layout'

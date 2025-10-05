@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
   createFileRoute,
-  Link,
   useNavigate,
   useRouter,
 } from '@tanstack/react-router'

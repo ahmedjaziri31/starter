@@ -25,7 +25,6 @@ export function LanguageSwitcher() {
     document.documentElement.lang = languageCode
   }
 
-  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0]
 
   return (
     <DropdownMenu>
